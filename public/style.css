@@ -650,6 +650,7 @@ button[type="submit"]:hover {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    flex: 1;
 }
 
 .card h3 {
@@ -697,25 +698,17 @@ button[type="submit"]:hover {
     background: #b03a2e;
     color: #fff;
     border: none;
-<<<<<<< HEAD
-    padding: 9px 18px;
+    padding: 11px 0;
     border-radius: 8px;
-    font-size: 0.85rem;
-    margin: 4px auto 0;
+    font-size: 0.9rem;
+    font-weight: 600;
     cursor: pointer;
     font-family: 'Space Grotesk', sans-serif;
     display: block;
-    width: fit-content;
-    align-self: center;
+    width: 100%;
+    max-width: 160px;
     text-align: center;
-=======
-    padding: 9px 10px;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    margin-top: 4px;
-    cursor: pointer;
-    font-family: 'Space Grotesk', sans-serif;
->>>>>>> dcef1b01ab0e93b3a5a64a78dbf72e11cbea26dc
+    margin: auto auto 0;
 }
 
 .card .btn-excluir:hover {
