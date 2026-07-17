@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-mug-hot"></i>
+<h2>Coffee House</h2>
+</div>
+
+<nav>
+
+<a href="#">Início</a>
+<a href="#sobre">Sobre</a>
+<a href="#menu">Cardápio</a>
+
+</nav>
+
+<div class="icons">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<i class="fa-solid fa-cart-shopping">
+<span id="contador">0</span>
+</i>
+
+</div>
+
+</header>
+
+<section class="banner">
+
+<div class="texto">
+
+<h1>O melhor café da cidade</h1>
+
+<p>
+
+Cafés especiais, doces artesanais e um ambiente perfeito para você relaxar.
+
+</p>
+
+<button>Ver Cardápio</button>
+
+</div>
+
+</section>
+
+<section id="sobre" class="sobre">
+
+<h2>Sobre Nós</h2>
+
+<p>
+
+Nossa cafeteria oferece cafés selecionados, bolos caseiros, salgados frescos e um ambiente acolhedor.
+
+</p>
+
+</section>
+
+<section id="menu" class="menu">
+
+<h2>Nosso Cardápio</h2>
+
+<h3 class="subtitulo-menu">Bebidas</h3>
+<div class="cards" id="bebidas-cards">
+    <!-- Preenchido dinamicamente via fetch em GET /api/bebidas -->
+</div>
+
+<h3 class="subtitulo-menu">Comidas</h3>
+<div class="cards" id="comidas-cards">
+    <!-- Preenchido dinamicamente via fetch em GET /api/comidas -->
+</div>
+
+</section>
+
+<section class="galeria">
+
+<footer id="contato">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h3>Coffee House</h3>
+
+            <p>
+                Cafés especiais, doces artesanais e um ambiente aconchegante para todos os momentos.
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Contato</h3>
+
+            <p><i class="fa-solid fa-phone"></i> (31) 99999-9999</p>
+
+            <p><i class="fa-solid fa-envelope"></i> contato@coffeehouse.com</p>
+
+            <p><i class="fa-solid fa-clock"></i> Seg - Sáb: 08:00 às 20:00</p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Endereço</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                R, paneiras 1300 <br>
+                eldorado - Contagem/MG
+            </p>
+
+        </div>
+
+        <div class="footer-box">
+
+            <h3>Redes Sociais</h3>
+
+            <div class="redes">
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-facebook"></i></a>
+
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="copyright">
+
+        © 2026 Coffee House - Todos os direitos reservados.
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
