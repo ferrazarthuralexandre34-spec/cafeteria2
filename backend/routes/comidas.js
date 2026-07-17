@@ -19,15 +19,15 @@ router.get("/", async (req, res) => {
 // POST /api/comidas -> cadastra uma nova comida
 router.post("/", async (req, res) => {
     try {
-        const { nome, descricao, preco, categoria, imagem } = req.body;
-
+        const { nome, descricao, preco, categoria, imagem, quantidade } = req.body;
         if (!nome || !preco) {
             return res.status(400).json({ erro: "Campos 'nome' e 'preco' são obrigatórios." });
         }
 
         const [resultado] = await db.query(
-            "INSERT INTO comidas (nome, descricao, preco, categoria, imagem) VALUES (?, ?, ?, ?, ?)",
-            [nome, descricao, preco, categoria, imagem]
+    "INSERT INTO comidas (nome, descricao, preco, categoria, imagem, quantidade) VALUES (?, ?, ?, ?, ?, ?)",
+    [nome, descricao, preco, categoria, imagem, quantidade || 0]
+    
         );
 
         res.status(201).json({
