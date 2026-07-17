@@ -697,6 +697,7 @@ button[type="submit"]:hover {
     background: #b03a2e;
     color: #fff;
     border: none;
+<<<<<<< HEAD
     padding: 9px 18px;
     border-radius: 8px;
     font-size: 0.85rem;
@@ -707,6 +708,14 @@ button[type="submit"]:hover {
     width: fit-content;
     align-self: center;
     text-align: center;
+=======
+    padding: 9px 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    cursor: pointer;
+    font-family: 'Space Grotesk', sans-serif;
+>>>>>>> dcef1b01ab0e93b3a5a64a78dbf72e11cbea26dc
 }
 
 .card .btn-excluir:hover {
