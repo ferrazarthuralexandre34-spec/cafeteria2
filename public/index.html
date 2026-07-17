@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Lumière — Cafeteria & Torrefação</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,700;1,500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-top">
+        <div class="marca">
+            <span class="marca-icone">☕</span>
+            <span class="marca-nome">Café Lumière</span>
+        </div>
+        <nav class="nav">
+            <button class="nav-btn active" data-target="home">Home</button>
+            <button class="nav-btn" data-target="sobre">Sobre Nós</button>
+            <button class="nav-btn" data-target="cardapio">Cardápio</button>
+            <button class="nav-btn nav-btn-destaque" data-target="adicionar">+ Adicionar Item</button>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- HOME -->
+    <section id="home" class="page ativa tema-home">
+        <div class="hero">
+            <p class="eyebrow">Torra artesanal · Todos os dias</p>
+            <h1>Café Lumière</h1>
+            <p class="slogan">O melhor café da cidade, direto para sua xícara</p>
+            <button class="btn-hero" data-target="cardapio">Ver Cardápio</button>
+
+            <svg class="vapor" viewBox="0 0 120 160" aria-hidden="true">
+                <path class="linha-vapor l1" d="M30 150 C 10 120, 50 100, 30 70 C 10 40, 50 20, 35 0" />
+                <path class="linha-vapor l2" d="M60 150 C 40 120, 80 100, 60 70 C 40 40, 80 20, 65 0" />
+                <path class="linha-vapor l3" d="M90 150 C 70 120, 110 100, 90 70 C 70 40, 110 20, 95 0" />
+            </svg>
+        </div>
+
+        <div class="carrossel-wrap">
+            <p class="carrossel-titulo">Destaques da casa</p>
+            <div class="carrossel">
+                <div class="carrossel-trilho">
+                    <div class="destaque-card"><img src="img/cafe especial.jpg" alt="Cafés Especiais"><p>Cafés Especiais</p></div>
+                    <div class="destaque-card"><img src="img/Padaria Artesanal.jpg" alt="Padaria Artesanal"><p>Padaria Artesanal</p></div>
+                    <div class="destaque-card"><img src="img/Doces da Casa.jpg" alt="Doces da Casa"><p>Doces da Casa</p></div>
+                    <div class="destaque-card"><img src="img/Bebidas Geladas.jpg" alt="Bebidas Geladas"><p>Bebidas Geladas</p></div>
+                    <div class="destaque-card"><img src="img/Salgados Frescos.jpg" alt="Salgados Frescos"><p>Salgados Frescos</p></div>
+                    <div class="destaque-card"><img src="img/cafe especial.jpg" alt="Cafés Especiais"><p>Cafés Especiais</p></div>
+                    <div class="destaque-card"><img src="img/Padaria Artesanal.jpg" alt="Padaria Artesanal"><p>Padaria Artesanal</p></div>
+                    <div class="destaque-card"><img src="img/Doces da Casa.jpg" alt="Doces da Casa"><p>Doces da Casa</p></div>
+                    <div class="destaque-card"><img src="img/Bebidas Geladas.jpg" " alt="Bebidas Geladas"><p>Bebidas Geladas</p></div>
+                    <div class="destaque-card"><img src="img/Salgados Frescos.jpg" alt="Salgados Frescos"><p>Salgados Frescos</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEÇÕES INFORMATIVAS DA EMPRESA (HOME) -->
+        <div class="home-empresa-detalhada">
+            <div class="container">
+                
+                <!-- Bloco 1: A Nossa História e Essência -->
+                <div class="empresa-bloco">
+                    <div class="empresa-texto">
+                        <span class="tag-secao">Nossa Essência</span>
+                        <h2>Muito mais que uma xícara, uma verdadeira experiência sensorial</h2>
+                        <p>Fundado com o propósito de elevar a cultura do café na cidade, o <strong>Café Lumière</strong> nasceu da paixão profunda por grãos selecionados, processos rigorosos de torra e pelo acolhimento que só um ambiente aconchegante pode proporcionar. Acreditamos que cada gole deve contar uma história — desde a colheita nos altiplanos até a extração perfeita feita por baristas apaixonados.</p>
+                        <p>Nosso espaço foi desenhado milimetricamente para ser o seu refúgio urbano: seja para uma reunião de negócios rápida, uma leitura tranquila de tarde ou um encontro memorável entre amigos acompanhado de quitutes artesanais frescos.</p>
+                    </div>
+                    <div class="empresa-destaque-visual">
+                        <div class="card-visual-estatistica">
+                            <span class="numero">100%</span>
+                            <span class="legenda">Grãos Arábica Selecionados</span>
+                        </div>
+                        <div class="card-visual-estatistica">
+                            <span class="numero">4.9</span>
+                            <span class="legenda">Avaliação Média dos Clientes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco 2: Como Produzimos (Com Cuidado e Rigor) -->
+                <div class="empresa-bloco reverso">
+                    <div class="empresa-texto">
+                        <span class="tag-secao">Do Grão à Xícara</span>
+                        <h2>Como produzimos: O cuidado artesanal em cada etapa</h2>
+                        <p>A excelência do nosso café não é obra do acaso. Ela é o resultado de um padrão rigoroso de qualidade e de um processo totalmente dedicado e artesanal:</p>
+                        <ul class="lista-producao">
+                            <li><strong>Seleção Rigorosa na Origem:</strong> Trabalhamos em parceria direta com pequenos produtores locais e fazendas de altitude, garantindo que apenas os melhores grãos cheguem ao nosso estabelecimento.</li>
+                            <li><strong>Torra Controlada Diariamente:</strong> Nossos lotes de café passam por curvas de torra milimetricamente estudadas para realçar as notas de chocolate, caramelo e frutas vermelhas, sem amargor excessivo.</li>
+                            <li><strong>Moagem sob Demanda:</strong> Para preservar todos os óleos essenciais e o aroma inconfundível, os grãos são moídos exclusivamente no momento do preparo da sua bebida.</li>
+                            <li><strong>Higiene e Sustentabilidade:</strong> Valorizamos práticas sustentáveis, desde o reaproveitamento de resíduos orgânicos para compostagem até embalagens 100% recicláveis.</li>
+                        </ul>
+                    </div>
+                    <div class="empresa-badges-grid">
+                        <div class="badge-item">
+                            <span>🌱</span>
+                            <h4>Sustentável</h4>
+                            <p>Parcerias éticas e comércio justo com agricultores.</p>
+                        </div>
+                        <div class="badge-item">
+                            <span>🔥</span>
+                            <h4>Torra Fresca</h4>
+                            <p>Grãos sempre frescos e com perfil aromático preservado.</p>
+                        </div>
+                        <div class="badge-item">
+                            <span>☕</span>
+                            <h4>Maestria</h4>
+                            <p>Baristas certificados e apaixonados pela arte do café.</p>
+                        </div>
+                        <div class="badge-item">
+                            <span>🥐</span>
+                            <h4>Feito à Mão</h4>
+                            <p>Padaria e confeitaria artesanal produzidas todas as manhãs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloco 3: Compromisso com a Qualidade e Comunidade -->
+                <div class="empresa-compromisso">
+                    <h3>Nosso Compromisso com Você</h3>
+                    <p>No Café Lumière, o cliente é parte da nossa família. Mantemos um padrão intransigente de qualidade em nossos insumos, priorizando ingredientes frescos, sem conservantes artificiais e com um atendimento humano, caloroso e eficiente. Venha nos visitar e descubra um novo padrão de excelência em cafeterias.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section id="sobre" class="page tema-sobre">
+        <div class="container">
+            <h2 class="titulo-secao">Sobre Nós</h2>
+            <div class="sobre-conteudo">
+                <p>A Aroma & Grão nasceu do amor por um bom café e da vontade de criar um espaço aconchegante para
+                quem busca uma pausa no dia a dia. Trabalhamos com grãos selecionados e receitas próprias, feitas
+                com carinho todos os dias.</p>
+                <p>Nosso objetivo é oferecer uma experiência completa: um ambiente agradável, atendimento próximo
+                e um cardápio que une comidas e bebidas de qualidade, pensado para todos os gostos.</p>
+            </div>
+
+            
+
+            <h3 class="titulo-secao">Sobre o Projeto</h3>
+            <div class="portfolio">
+                <div class="portfolio-card">
+                    <span class="portfolio-numero">01</span>
+                    <h4>Tecnologias usadas</h4>
+                    <p>HTML, CSS e JavaScript no front-end; Node.js, Express e MySQL no back-end,
+                    consumindo uma API própria via fetch.</p>
+                </div>
+                <div class="portfolio-card">
+                    <span class="portfolio-numero">02</span>
+                    <h4>Banco de Dados</h4>
+                    <p>Estrutura em MySQL com tabelas de comidas e bebidas, incluindo foto, quantidade
+                    em estoque e volume (ml) para bebidas.</p>
+                </div>
+                <div class="portfolio-card">
+                    <span class="portfolio-numero">03</span>
+                    <h4>Objetivo</h4>
+                    <p>Sistema desenvolvido como trabalho acadêmico, simulando o cardápio digital
+                    de uma cafeteria real, com atualização em tempo real.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section id="cardapio" class="page tema-cardapio">
+        <div class="container">
+            <h2 class="titulo-secao">Comidas</h2>
+            <div id="lista-comidas" class="cards-grid"></div>
+
+            <h2 class="titulo-secao">Bebidas</h2>
+            <div id="lista-bebidas" class="cards-grid"></div>
+        </div>
+    </section>
+
+    <!-- ADICIONAR ITEM -->
+    <section id="adicionar" class="page tema-adicionar">
+        <div class="container">
+            <h2 class="titulo-secao">Adicionar Item</h2>
+            <form id="form-item" class="form-section">
+
+                <div class="form-row">
+                    <select id="tipo-item" required>
+                        <option value="comidas">Comida</option>
+                        <option value="bebidas">Bebida</option>
+                    </select>
+                    <input type="text" id="nome" placeholder="Nome do item" required>
+                </div>
+
+                <div class="form-row">
+                    <input type="text" id="descricao" placeholder="Descrição" required>
+                    <input type="number" id="preco" step="0.01" placeholder="Preço (R$)" required>
+                </div>
+
+                <div class="form-row">
+                    <input type="text" id="extra" placeholder="Categoria (comida) / Tamanho (bebida)" required>
+                    <input type="number" id="quantidade" min="0" placeholder="Quantidade em estoque" required>
+                    <input type="number" id="ml" min="0" placeholder="Volume (ml)" class="campo-ml oculto">
+                </div>
+
+                <div class="form-row">
+                    <div class="campo-foto">
+                        <label for="foto">Foto do item</label>
+                        <input type="file" id="foto" accept="image/*">
+                    </div>
+                    <img id="preview-foto" class="preview-foto oculto" alt="Pré-visualização da foto">
+                </div>
+
+                <button type="submit">Adicionar Item</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 Cafeteria Café Lumière — Todos os direitos reservados</p>
+    <p>Rua dos Grãos, 123 — Aberto de Segunda a Sábado, 7h às 20h</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
