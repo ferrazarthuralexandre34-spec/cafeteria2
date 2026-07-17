@@ -1,5 +1,5 @@
 // URL base da API (altere se o backend estiver em outro endereço)
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://profound-grace-production-3789.up.railway.app/api';
 
 const listaComidas = document.getElementById('lista-comidas');
 const listaBebidas = document.getElementById('lista-bebidas');
